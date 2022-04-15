@@ -1,0 +1,57 @@
+:root {
+  --humber-blue: #000033;
+  --humber-yellow: #cc9900;
+}
+
+.main {
+  height: 100vh;
+  padding-top: 100px;
+
+  /* layered svg background code from https://www.youtube.com/watch?v=lPJVi797Uy0 */
+  aspect-ratio: 16/9;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/layers.svg");
+}
+
+.logo {
+  height: 4rem;
+}
+
+/* modifying bootstrap classes to match with humber theme */
+.btn-success,
+.btn-success:focus {
+  background-color: var(--humber-blue);
+  border-color: var(--humber-blue);
+  box-shadow: none;
+}
+
+.btn-success:hover,
+.btn-success:active:focus,
+.btn-success:active {
+  background-color: var(--humber-yellow);
+  border-color: var(--humber-yellow);
+  box-shadow: none;
+}
+
+.btn-outline-danger {
+  color: var(--humber-yellow);
+  border-color: var(--humber-yellow);
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus,
+.btn-outline-danger:active,
+.btn-outline-danger:active:focus {
+  background-color: var(--humber-yellow);
+  border-color: var(--humber-yellow);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.btn-danger:focus,
+.btn-danger:active:focus {
+  box-shadow: none;
+}
